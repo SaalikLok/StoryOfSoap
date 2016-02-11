@@ -16,10 +16,13 @@ def boxguessing():
         print("What's your guess for the word?")
         ans = input()
         if ans == _guessword1:
-            print("You guessed correctly! The word was " + _guessword1)
+            print("You guessed correctly! The word was " + _guessword1 + ".")
+            break
         else:
-            print("Incorrect. You have " + str(tries-1) + " left")
-
+            print("Incorrect. You have " + str(tries-1) + " tries left")
+            for i in ans:
+                if i in _guessword1:
+                    print("The answer contains the letter: " + i)
 
 # Soap wants to figure out whether he wants to see the world or not.
 def openingbox():
@@ -42,3 +45,4 @@ def openingbox():
 
 token = None
 wordlist = ['dishes', 'carbon', 'adventure', 'cardboard', 'corny', 'turbulent', 'fastidious', 'fingers']
+ansSpot = 0
