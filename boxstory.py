@@ -1,4 +1,4 @@
-# This is the BoxStory Class - The Storyline which involves a word guessing game.
+# This is the BoxStory - The Storyline which involves a word guessing game.
 
 import random
 
@@ -12,8 +12,6 @@ def boxguessing():
           "right word.")
     print(separator())
     _guessword1 = random.choice(wordlist)
-# Debug Only:
-    print(_guessword1)
     _letternum = len(_guessword1)
 
     for tries in range(5, 0, -1):
@@ -22,12 +20,13 @@ def boxguessing():
         ans = input()
         if ans == _guessword1:
             print("You guessed correctly! The word was " + _guessword1 + ".")
+            boxopened()
             break
         else:
             print("Incorrect. You have " + str(tries-1) + " tries left")
             if tries == 1:
-                print("You don't have any tries left. Looks like the door is closed and you'll remain the mustiness for"
-                      " now. Goodbye.")
+                print("You don't have any tries left. The word was" + _guessword1 + ". " +
+                      "Looks like the box is closed and you'll remain the mustiness for now. Goodbye.")
                 input()
                 quit()
             for i in ans:
@@ -50,11 +49,15 @@ def openingbox():
             print("Looks like the door is closed and you'll remain the mustiness for now. Goodbye.")
             input()
             quit()
-    except ValueError:
+    except ValueError():
         print("Try again, you haven't done anything.")
 
 def separator():
     return "------------------------------------------------------------------------------------------------------"
+
+def boxopened():
+    print("Soap gasps as the flaps of the box seem to fold away and light streams into the dark, dark box. The box"
+          "has been opened! Soap decided now. He is ready.")
 
 
 token = None
