@@ -5,16 +5,20 @@ import random
 
 name = "Soap"
 newname = None
-fnamelist = ["Sudsy", "Frothy", "Dood", "Blah", "Stink", "Merp" ]
+fnamelist = ["Sudsy", "Frothy", "Dood", "Blah", "Stink", "Merp"]
 lnamelist = ["Shampoo", "Man", "Packet", "Bar", "Blah", "McSoap"]
 
 def namegenerator():
     print("You are about to get a new name! The program will present a maximum of five combined first and last names. "
           "Approve of the name by typing 'y' and disapprove of the name, using anything else.")
-    for tries in (5, 0, -1):
+    for tries in range(5, 1, -1):
         newname = random.choice(fnamelist) + " " + random.choice(lnamelist)
         print("Here's a name: " + newname + ".")
-        print("You have " + str(tries) + " left, do you like this name? Type 'y' if you do.")
+        if tries == 1:
+            print("You have no tries left. Looks like you'll be sticking with your old name, Soap")
+            break
+        else:
+            print("You have " + str(tries - 1) + " names left, do you like this name? Type 'y' if you do.")
         choice = input()
         if choice == "y":
             name = newname

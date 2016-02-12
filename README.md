@@ -1,6 +1,6 @@
 # The Story Of Soap
 
-Version 0.04 - Sudsy (Highly Unstable)
+Version 0.06 - Sudsy (Highly Unstable)
 
 A text based game and collection of text based minigames centered around Soap, a bar of soap.
 There are no frameworks or GUIs used in making this program, it is run from Python on the command line or terminal.
