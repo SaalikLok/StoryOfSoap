@@ -2,6 +2,7 @@
 #Ver 0.01
 
 import boxstory
+import dishstory
 
 print("Hello World. This is the Story of Soap, an interactive tale told using the most basic Python Code.")
 print("Have you met Soap Before? Answer using 'y' or 'n'")
@@ -21,4 +22,5 @@ print("Are you ready to go?")
 print("You better be! Press ENTER to continue.")
 input()
 
+dishstory.dishstart()
 boxstory.openingbox()
