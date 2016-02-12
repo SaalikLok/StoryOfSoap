@@ -49,7 +49,7 @@ def openingbox():
             print("Looks like the door is closed and you'll remain the mustiness for now. Goodbye.")
             input()
             quit()
-    except ValueError():
+    except ValueError:
         print("Try again, you haven't done anything.")
 
 def separator():

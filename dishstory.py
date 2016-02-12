@@ -3,5 +3,9 @@
 
 import random
 
-def dishriddles():
+def namegenerator():
     print("Nothing so far.")
+
+def dishstart():
+    print("Soap is sitting in a soap dish. He's basking in the bright bathroom lights, three blazing suns in Soap's "
+          "world. ")
