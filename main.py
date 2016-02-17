@@ -3,6 +3,9 @@
 
 import boxstory
 import dishstory
+import sinkstory
+import random
+z = random.randint(1, 3)
 
 print("Hello World. This is the Story of Soap, an interactive tale told using the most basic Python Code.")
 print("Have you met Soap Before? Answer using 'y' or 'n'")
@@ -13,8 +16,8 @@ if metSoap == ('n' or 'N'):
     print("One day, Soap was just hanging out in his dark box. What should soap do?")
     soapAction = input()
     print("So Soap decided to " + soapAction)
-    print("Well. That's pretty ridiculous isn't it? We need to make sure Soap doesn't do crazy things like " + soapAction +
-          ". That's why we should start a real adventure!")
+    print("Well. That's pretty ridiculous isn't it? We need to make sure Soap doesn't do crazy things like " +
+        soapAction + ". That's why we should start a real adventure!")
 else:
     print("Looks like you didn't say no... so you have met Soap!")
 
@@ -22,5 +25,9 @@ print("Are you ready to go?")
 print("You better be! Press ENTER to continue.")
 input()
 
-dishstory.dishstart()
-boxstory.openingbox()
+if z == 1:
+    dishstory.dishstart()
+elif z == 2:
+    boxstory.openingbox()
+else:
+    sinkstory.sinkstart()
