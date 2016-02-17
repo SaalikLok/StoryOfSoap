@@ -21,7 +21,7 @@ def boxguessing():
         if ans == _guessword1:
             print("You guessed correctly! The word was " + _guessword1 + ".")
             boxopened()
-            break
+            quit()
         else:
             print("Incorrect. You have " + str(tries-1) + " tries left")
             if tries == 1:
@@ -36,7 +36,6 @@ def boxguessing():
 
 # Soap wants to figure out whether he wants to see the world or not.
 def openingbox():
-    print(separator())
     print("Today, Soap feels like breaking out of his shell. Well, he actually feels like breaking out of his box.")
     print("What should he do? 'break' or 'not'?")
 

@@ -23,7 +23,8 @@ def namegenerator():
         if choice == "y":
             name = newname
             print("Awesome! Your new name is: " + name)
-            break
+            input()
+            quit()
         else:
             print("Okay. Let's try again.")
 

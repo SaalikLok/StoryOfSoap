@@ -1,6 +1,6 @@
 # The Story Of Soap
 
-Version 0.06 - Sudsy (Highly Unstable)
+Version 0.1 - Sudsy (Stable)
 
 A text based game and collection of text based minigames centered around Soap, a bar of soap.
 There are no frameworks or GUIs used in making this program, it is run from Python on the command line or terminal.
@@ -13,3 +13,4 @@ Dish Story: HandSoap convinces Soap to have a new name. Choose Soap's new name u
 
 
 This is a project that I am building to learn Python. It is licensed under the MIT License, so feel free to use this code for whatever you need!
+Thanks to GoodRiddlesNow.com for riddles used in this program.

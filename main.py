@@ -1,5 +1,5 @@
 #Saalik Lokhandwala's Story of Soap.
-#Ver 0.01
+#Ver 0.10
 
 import boxstory
 import dishstory
@@ -24,6 +24,9 @@ else:
 print("Are you ready to go?")
 print("You better be! Press ENTER to continue.")
 input()
+print("------------------------------------------------------------------------------------------------------")
+
+sinkstory.sinkstart()
 
 if z == 1:
     dishstory.dishstart()
